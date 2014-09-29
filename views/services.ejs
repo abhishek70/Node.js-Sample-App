@@ -1,0 +1,17 @@
+<%- include header.ejs %>
+    <div id="site_content">
+      <div id="content">
+        <h1>Services</h1>
+        <p>
+        <% pages.forEach( function ( page ){ %>
+          <%= page.page_content %>
+        <% }); %>
+        </hp>
+      </div>
+    </div>
+ <script type="text/javascript">
+        $(document).ready(function() {
+            $('#services').addClass("selected");
+        });
+ </script>
+<%- include footer.ejs %>
